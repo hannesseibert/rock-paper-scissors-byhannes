@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock Paper Scissor</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="styles/10-rock-paper-scissors.css">
+
+</head>
+
+<body>
+  <p class="title">Rock Paper Scissors &mdash; Game till 10 </p>
+  <button onclick="
+
+   playGame('rock');
+
+  " class="move-button">
+    <img class="move-icon" src="images/rock-emoji.png">
+  </button>
+  <button onclick="
+ 
+   playGame('paper');
+
+  " class="move-button">
+    <img class="move-icon" src="images/paper-emoji.png">
+  </button>
+  <button onclick="
+
+   playGame('scissors');
+
+  " class="move-button">
+    <img class="move-icon" src="images/scissors-emoji.png">
+  </button>
+
+  <p class="js-result result"></p>
+
+  <p class="js-moves moves">
+
+  </p>
+
+  <p class="js-score score"></p>
+
+
+  <button onclick="resetScore();
+  " class="reset-score-button">Reset Score</button>
+
+
+  <script src="scripts/10-rock-paper-scissors.js"></script>
+</body>
+
+</html>

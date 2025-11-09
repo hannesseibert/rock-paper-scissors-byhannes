@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-family: arial;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.move-icon {
+  height: 5rem;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 0.3rem solid white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  margin: 1rem;
+}
+
+.result {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 2rem
+}
+
+.moves {
+  margin-left: 1rem;
+
+}
+
+.score {
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.reset-score-button {
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+
+@keyframes glitch {
+  0% {
+    clip: rect(10px, 9999px, 40px, 0);
+    transform: translate(-2px, -2px);
+  }
+
+  10% {
+    clip: rect(85px, 9999px, 140px, 0);
+    transform: translate(2px, 2px);
+  }
+
+  20% {
+    clip: rect(10px, 9999px, 80px, 0);
+    transform: translate(-2px, 2px);
+  }
+
+  30% {
+    clip: rect(50px, 9999px, 100px, 0);
+    transform: translate(2px, -2px);
+  }
+
+  40% {
+    clip: rect(20px, 9999px, 60px, 0);
+    transform: translate(-2px, 1px);
+  }
+
+  50% {
+    clip: rect(80px, 9999px, 120px, 0);
+    transform: translate(1px, -2px);
+  }
+
+  60% {
+    clip: rect(10px, 9999px, 40px, 0);
+    transform: translate(-1px, 2px);
+  }
+
+  70% {
+    clip: rect(40px, 9999px, 90px, 0);
+    transform: translate(2px, -1px);
+  }
+
+  80% {
+    clip: rect(20px, 9999px, 70px, 0);
+    transform: translate(-2px, 1px);
+  }
+
+  90% {
+    clip: rect(60px, 9999px, 130px, 0);
+    transform: translate(1px, -1px);
+  }
+
+  100% {
+    clip: rect(10px, 9999px, 40px, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 0.5s linear;
+}
